@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nöbetçi Eczanem</string>
+    <string name="nearest">En Yakın</string>
+    <string name="all">Tümü</string>
+    <string name="settings">Ayarlar</string>
+    <string name="city">ŞEHİR</string>
+    <string name="state">İLÇE</string>
+    <string name="district">SEMT</string>
+    <string name="pharmacy_here">Eczaneniz Burada</string>
+    <string name="get_direction">YOL TARİFİ AL</string>
+    <string name="meter">METRE</string>
+    <string name="get_location_error">Konumunuz alınamadı, lütfen cihazınızın konum servislerinin açık olduğundan ve uygulamanın konum izinlerini onayladığınızdan emin olunuz.</string>
+</resources>

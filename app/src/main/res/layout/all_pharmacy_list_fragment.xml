@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/all_pharmacy_list_fragment"
+    tools:context=".Fragments.AllPharmacyListFragment">
+    <LinearLayout
+        android:id="@+id/dummy_pharmacies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+        <include layout="@layout/dummy_row_pharmacy" />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

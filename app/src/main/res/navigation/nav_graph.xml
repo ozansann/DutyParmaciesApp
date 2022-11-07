@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.od.dutyparmaciesapp.Fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_allPharmacyListFragment"
+            app:destination="@id/allPharmacyListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pharmacyDetailFragment"
+            app:destination="@id/pharmacyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmacyDetailFragment"
+        android:name="com.od.dutyparmaciesapp.Fragments.PharmacyDetailFragment"
+        android:label="PharmacyDetailFragment" >
+        <action
+            android:id="@+id/action_pharmacyDetailFragment_to_googleMapsFragment"
+            app:destination="@id/googleMapsFragment" />
+        <action
+            android:id="@+id/action_pharmacyDetailFragment_to_allPharmacyListFragment2"
+            app:destination="@id/allPharmacyListFragment" />
+        <action
+            android:id="@+id/action_pharmacyDetailFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_pharmacyDetailFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.od.dutyparmaciesapp.Fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_allPharmacyListFragment"
+            app:destination="@id/allPharmacyListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPharmacyListFragment"
+        android:name="com.od.dutyparmaciesapp.Fragments.AllPharmacyListFragment"
+        android:label="all_pharmacy_list_fragment"
+        tools:layout="@layout/all_pharmacy_list_fragment" >
+        <action
+            android:id="@+id/action_allPharmacyListFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_allPharmacyListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleMapsFragment"
+        android:name="com.od.dutyparmaciesapp.Fragments.GoogleMapsFragment"
+        android:label="fragment_google_maps"
+        tools:layout="@layout/fragment_google_maps" >
+        <action
+            android:id="@+id/action_googleMapsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_googleMapsFragment_to_allPharmacyListFragment3"
+            app:destination="@id/allPharmacyListFragment" />
+        <action
+            android:id="@+id/action_googleMapsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

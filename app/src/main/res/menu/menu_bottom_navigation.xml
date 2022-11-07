@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationAll"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/navigationHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nearest" />
+    <item
+        android:id="@+id/navigationSettings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+</menu>
